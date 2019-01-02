@@ -66,6 +66,7 @@ STATIC_ROOT = os.path.join(DATA_DIR, 'static')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'blog', 'static'),
+    os.path.join(BASE_DIR, "node_modules"),
 )
 SITE_ID = 1
 
@@ -110,7 +111,7 @@ MIDDLEWARE = (
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
-    'cms.middleware.language.LanguageCookieMiddleware'
+    'cms.middleware.language.LanguageCookieMiddleware',
 )
 
 INSTALLED_APPS = (
@@ -130,13 +131,13 @@ INSTALLED_APPS = (
     'djangocms_text_ckeditor',
     'filer',
     'easy_thumbnails',
-    'djangocms_column',
-    'djangocms_file',
+    # 'djangocms_column',
+    # 'djangocms_file',
     'djangocms_link',
     'djangocms_picture',
     'djangocms_style',
-    'djangocms_snippet',
-    'djangocms_googlemap',
+    # 'djangocms_snippet',
+    # 'djangocms_googlemap',
     'djangocms_video',
     'blog'
 )
@@ -188,7 +189,7 @@ DATABASES = {
 }
 
 MIGRATION_MODULES = {
-    
+
 }
 
 THUMBNAIL_PROCESSORS = (
@@ -197,3 +198,6 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+DJANGOCMS_STYLE_CHOICES = ['etiquette', 'etiquetteSombre', ]
+DJANGOCMS_STYLE_TAGS = ['article', 'section', 'header', 'footer', 'h2', 'h3', 'h4', 'h5', 'h6']

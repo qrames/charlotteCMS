@@ -1,0 +1,109 @@
+body {
+  background: #112430;
+  background-image: url("../images/trianglify4.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #FFFFFF;
+}
+
+#body {
+  background-image: url("../images/logo_charlotte.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  background-size: 40vh;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 950px;
+  margin: 0 auto;
+  font-family: 'Thasadith', sans-serif;
+}
+
+nav {
+  position: relative;
+  font-family: 'Kalam', cursive;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  padding: 0 0 0 2rem;
+  line-height: 3rem;
+  text-decoration: none;
+}
+nav ul li a .iconStart {
+  transition: 1s margin ease;
+  margin: 0 1rem 0 1rem;
+}
+nav ul li a:hover {
+  color: #ADEEF4;
+  background-color: #879E9F;
+}
+nav ul li a:hover .iconStart {
+  margin: 0 0rem 0 2rem;
+}
+nav > ul {
+  list-style: none;
+  margin: 0;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(135, 158, 159, 0.49);
+  position: fixed;
+  z-index: 5;
+  padding: 0 1rem 0 0;
+  left: -10px;
+}
+nav > ul > li {
+  margin: 0.5rem 0;
+}
+nav > ul > li > a {
+  color: #D79106;
+  background-color: #FFFFFF;
+  transition: 0.5s padding;
+  border-bottom: 4px solid #D79106;
+  box-shadow: 6px 4px rgba(17, 36, 48, 0.8);
+}
+nav > ul > li > ul {
+  padding: 0;
+}
+nav > ul > li > ul > li {
+  margin: 0.5rem 0;
+}
+nav > ul > li > ul > li > a {
+  color: #D79106;
+  text-decoration: none;
+  border-bottom: 4px solid rgba(215, 145, 6, 0.5);
+  background-color: #FFFFFF;
+}
+
+.etiquette {
+  background-color: #FADE9F;
+  padding: 3rem;
+}
+
+.etiquetteSombre {
+  background-color: #242321;
+  padding: 3rem;
+  color: #EEEEEE;
+}
+
+@media screen and (max-width: 450px) {
+  nav .nav-menu-phone {
+    display: block;
+    border: 4px solid white;
+    line-height: 3rem;
+    padding: 0.4rem 2rem;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    color: #D79106;
+    border-radius: 2px;
+  }
+  nav > ul {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

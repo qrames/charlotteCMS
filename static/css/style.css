@@ -1,0 +1,104 @@
+body {
+  background: #112430;
+  background-image: url("../images/trianglify4.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #FFFFFF;
+}
+
+#body {
+  background-image: url("../images/logo_charlotte.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  background-size: 40vh;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 950px;
+  margin: 0 auto;
+  font-family: 'Thasadith', sans-serif;
+}
+
+nav {
+  position: relative;
+  font-family: 'Kalam', cursive;
+}
+nav > ul {
+  list-style: none;
+  margin: 0;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(135, 158, 159, 0.49);
+  position: fixed;
+  z-index: 5;
+  left: -10px;
+  padding: 0 1rem 0 0;
+}
+nav > ul > li {
+  margin: 0.5rem 0;
+}
+nav > ul > li > a {
+  width: inherit;
+  border-bottom: 4px solid #D79106;
+  line-height: 3rem;
+  padding: 0.4rem 0 0.4rem 2rem;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  color: #D79106;
+  transition: 0.5s padding;
+  box-shadow: 5px 5px #112430;
+}
+nav > ul > li > a:hover {
+  color: #ADEEF4;
+  background-color: #879E9F;
+  padding: 0.4rem 2.5rem;
+}
+nav > ul > li > a .iconStart {
+  margin-left: 1rem;
+}
+nav > ul > li > ul {
+  list-style: none;
+  padding: 0;
+}
+nav > ul > li > ul > li {
+  margin: 0.5rem 0;
+}
+nav > ul > li > ul > li > a {
+  color: #D79106;
+  text-decoration: none;
+  border-bottom: 4px solid #FFFFFF;
+  line-height: 3rem;
+  padding: 0.4rem 0 0.4rem 2rem;
+  background-color: #112430;
+}
+
+.etiquette {
+  background-color: #FADE9F;
+  padding: 3rem;
+}
+
+.etiquetteSombre {
+  background-color: #242321;
+  padding: 3rem;
+  color: #EEEEEE;
+}
+
+@media screen and (max-width: 450px) {
+  nav .nav-menu-phone {
+    display: block;
+    border: 4px solid white;
+    line-height: 3rem;
+    padding: 0.4rem 2rem;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    color: #D79106;
+    border-radius: 2px;
+  }
+  nav > ul {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

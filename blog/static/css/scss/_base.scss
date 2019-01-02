@@ -1,0 +1,27 @@
+
+body {
+  background: $bg_1;
+  background-image: url('../images/trianglify4.png');
+  // background-image: url('../images/trianglify.png'), url('../images/logo_charlotte.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  // background-size: 40vh;
+  color: $color_3;
+}
+#body {
+
+  background-image: url('../images/logo_charlotte.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  background-size: 40vh;
+  min-height: 100vh;
+}
+
+
+main {
+  max-width: 950px;
+  margin: 0 auto;
+  font-family: 'Thasadith', sans-serif;
+
+}

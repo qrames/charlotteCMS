@@ -1,0 +1,19 @@
+@media screen and(max-width: 450px) {
+  nav {
+    .nav-menu-phone {
+      display: block;
+      border: 4px solid white;
+      line-height: 3rem;
+      padding: 0.4rem 2rem;
+      background-color: $bg_2;
+      text-decoration: none;
+      color: $color_1;
+      border-radius: 2px;
+    }
+
+    > ul {
+      display: none;
+    }
+
+  }
+}
