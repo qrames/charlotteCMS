@@ -25,3 +25,25 @@ main {
   font-family: 'Thasadith', sans-serif;
 
 }
+
+
+.circle-icon-big {
+  background: white;
+  color: $color_1;
+  padding: 1rem;
+  width: 3rem;
+  line-height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+.circle-icon {
+  background: white;
+  color: $color_1;
+  padding: 0.4rem;
+  width: 1.8rem;
+  line-height: 1.8rem;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}

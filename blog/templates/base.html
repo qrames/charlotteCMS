@@ -7,6 +7,7 @@
         <link rel="icon" type="image/png" href="{% static "images/etoilerond.png" %}" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="{% static "css/style.css" %}">
+        <link rel="stylesheet" href="{% static "@fortawesome/fontawesome-free/css/all.css" %}">
         <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
 
@@ -16,7 +17,8 @@
         {% cms_toolbar %}
         <div id="body">
           <nav>
-              <ul class="nav-menu">
+              <i id="show-menu" class="fas fa-bars circle-icon-big"></i>
+              <ul class="nav-menu close">
                   {% show_menu 0 100 100 100 %}
               </ul>
           </nav>
@@ -25,5 +27,8 @@
           </main>
         </div>
         {% render_block "js" %}
+        <script type="text/javascript" src="{% static "jquery/dist/jquery.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "@fortawesome/fontawesome-free/js/all.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/script.js" %}"></script>
     </body>
 </html>

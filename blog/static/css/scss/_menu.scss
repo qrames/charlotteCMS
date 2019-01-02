@@ -1,7 +1,12 @@
 nav {
   position: relative;
   font-family: 'Kalam', cursive;
-
+  #close-menu {
+    margin-left: 100%;
+  }
+  ul.close {
+    display: none;
+  }
   ul { // all menus
     list-style: none;
     li {
@@ -39,19 +44,19 @@ nav {
     // top: 5vh;
     left: -10px;
     > li {
-      margin: 0.5rem 0;
+      margin: 0.9rem 0;
       > a {
         color: $color_1;
         background-color: $bg_2;
         transition: 0.5s padding;
         border-bottom: 4px solid $color_1;
-        box-shadow: 6px 4px rgba($bg_1, 0.8);
+        box-shadow: 6px 6px rgba($bg_1, 0.8);
 
       }
       > ul { // sub menu
         padding: 0;
         > li {
-          margin: 0.5rem 0;
+          margin: 0.7rem 1rem 0.7rem 0;
           > a {
             color: $color_1;
             text-decoration: none;
